@@ -1,0 +1,103 @@
+body {
+    font-family: "fontRegular", sans-serif;
+    font-size: 18px;
+    /* line-height: 1.25; */
+}
+
+.container {
+    padding: 5px 0px 5px 0px;
+    margin: 0;
+}
+
+.searchinput::placeholder {
+    font-family: "fontRegular", sans-serif;
+}
+
+.logo {
+    width: 150px;
+}
+
+.logocontainer {
+    padding: 0;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.utility {
+    text-align: right;
+    width: 300px;
+    height: 40px;
+    margin-left: 491px;
+    margin-right: 100px;
+}
+
+.utility span,
+button {
+    vertical-align: middle;
+}
+
+.utility span {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(218, 216, 216);
+    text-align: center;
+
+}
+
+.utility button {
+    border: 0;
+    width: 60px;
+    height: 40px;
+    background-color: rgb(253, 194, 86);
+}
+
+.dropdown select {
+    border: 0;
+}
+
+.dropdown {
+    border: 1px solid black;
+    padding: 10px 0px 10px 0px;
+
+}
+
+.dropdown select option:first-child {
+    visibility: hidden;
+}
+
+.searchform>form>label>button {
+    width: 20px;
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+}
+
+.searchform>form>input {
+    border: 0;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 155px;
+}
+
+.searchform {
+    width: 185px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
