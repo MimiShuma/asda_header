@@ -4,9 +4,17 @@ body {
     /* line-height: 1.25; */
 }
 
+.hide {
+    display: none;
+}
+
 .container {
-    padding: 5px 0px 5px 0px;
+    padding: 0;
     margin: 0;
+    background-image: url(asda.png);
+    min-height: 102px;
+    background-size: 1536px;
+    background-repeat: no-repeat;
 }
 
 .searchinput::placeholder {
@@ -14,13 +22,14 @@ body {
 }
 
 .logo {
-    width: 150px;
+    width: 195px;
 }
 
 .logocontainer {
     padding: 0;
-    margin-left: 100px;
+    margin-left: 113px;
     margin-right: 10px;
+    margin-top: 19px;
 }
 
 a {
@@ -29,7 +38,9 @@ a {
 }
 
 .navbar {
-    width: 100%;
+    width: 1536px;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar div {
@@ -38,10 +49,8 @@ a {
 }
 
 .utility {
-    text-align: right;
-    width: 300px;
     height: 40px;
-    margin-left: 491px;
+    margin-left: 380px;
     margin-right: 100px;
 }
 
@@ -52,18 +61,23 @@ button {
 
 .utility span {
     display: inline-block;
-    width: 120px;
-    height: 40px;
+    width: 156px;
+    height: 55px;
+    line-height: 55px;
     background-color: rgb(218, 216, 216);
     text-align: center;
-
 }
 
 .utility button {
     border: 0;
-    width: 60px;
-    height: 40px;
+    width: 87px;
+    height: 55px;
     background-color: rgb(253, 194, 86);
+    /* background-color: rgb(249, 82, 5); */
+}
+
+.utility button a {
+    font-size: large;
 }
 
 .dropdown select {
@@ -71,9 +85,15 @@ button {
 }
 
 .dropdown {
+    margin-top: 17px;
     border: 1px solid black;
-    padding: 10px 0px 10px 0px;
+    padding: 17px 17px 17px 7px;
 
+}
+
+.dropdown select {
+    background-color: transparent;
+    font-size: 18px;
 }
 
 .dropdown select option:first-child {
@@ -81,8 +101,8 @@ button {
 }
 
 .searchform>form>label>button {
-    width: 20px;
-    height: 40px;
+    width: 50px;
+    height: 56px;
     border: 0;
     background-color: transparent;
 }
@@ -92,12 +112,21 @@ button {
     background-color: transparent;
     margin: 0;
     padding: 0;
-    height: 40px;
-    width: 155px;
+    height: 56px;
+    width: 199px;
+}
+
+.searchinput::placeholder {
+    font-size: large;
+    color: gray;
+    opacity: 0.2;
+    line-height: 30px;
 }
 
 .searchform {
-    width: 185px;
+    margin-top: 17px;
+    width: 249px;
+    height: 56px;
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
 }

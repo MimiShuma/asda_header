@@ -13,33 +13,45 @@
 
 <body>
     <header class="container">
-        <nav class="navbar">
-            <div class="logocontainer"><img src="assets/images/Asda.png" alt="logo of asda" class="logo" /></div>
-            <div class="dropdown">
-                <select name="grocery" id="grocery">
-                    <option value="" selected>Search Groceries</option>
-                    <option value="vegetables">Vegetables</option>
-                    <option value="bakery and bread">Bakery and Bread</option>
-                    <option value="meat and seafood">Meat and Seafood</option>
-                    <option value="dairy">Dairy, Cheese and Eggs</option>
-                    <option value="snakcks and drinks">Snacks and Drinks</option>
-                </select>
-            </div>
-            <div class="searchform">
-                <form>
-                    <input type="search" name="query" placeholder="for..." class="searchinput" /><label><button><i
-                                class="fa-solid fa-magnifying-glass fa-xs" style="color: #000000;"></i></button></label>
-                </form>
-            </div>
-            <div class="utility">
-                <span>
-                    <a href="#" class="location"><i class="fa-solid fa-location-dot fa-xs"
-                            style="color: #000000;"></i>&nbsp;Find&nbsp;a&nbsp;store</a>
-                </span>
-                <button><a href="#">Help</a></button>
-            </div>
-        </nav>
+        <div class="one hide">
+            <nav class="navbar">
+                <div class="logocontainer"><img src="assets/images/Asda.png" alt="logo of asda" class="logo" /></div>
+                <div class="dropdown">
+                    <select name="grocery" id="grocery">
+                        <option value="" selected>Search Groceries</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="bakery and bread">Bakery and Bread</option>
+                        <option value="meat and seafood">Meat and Seafood</option>
+                        <option value="dairy">Dairy and Eggs</option>
+                        <option value="snakcks and drinks">Snacks and Drinks</option>
+                    </select>
+                </div>
+                <div class="searchform">
+                    <form>
+                        <input type="search" name="query" placeholder="for..." class="searchinput" /><label><button><i
+                                    class="fa-solid fa-magnifying-glass fa-lg"
+                                    style="color: #000000;"></i></button></label>
+                    </form>
+                </div>
+                <div class="utility">
+                    <span>
+                        <a href="#" class="location"><i class="fa-solid fa-location-dot fa-xs"
+                                style="color: #000000;"></i>&nbsp;Find&nbsp;a&nbsp;store</a>
+                    </span>
+                    <button><a href="#">Help</a></button>
+                </div>
+            </nav>
+        </div>
     </header>
+
+    <button class="open-btn">Button</button>
+    <script>
+        document.querySelectorAll('.open-btn').forEach(btn =>
+            btn.addEventListener('click', e => {
+                btn.parentElement.querySelector('.one').classList.toggle('hide');
+            })
+        );
+    </script>
 </body>
 
 </html>
