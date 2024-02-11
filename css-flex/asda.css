@@ -1,0 +1,137 @@
+body {
+    font-family: "fontRegular", sans-serif;
+    font-size: 18px;
+    /* line-height: 1.25; */
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    background-image: url(../html/asda.png);
+    min-height: 102px;
+    background-size: 1536px;
+    background-repeat: no-repeat;
+}
+
+.searchinput::placeholder {
+    font-family: "fontRegular", sans-serif;
+}
+
+.logo {
+    width: 195px;
+}
+
+.logocontainer {
+    padding: 0;
+    margin-left: 113px;
+    margin-right: 10px;
+    margin-top: 19px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/*.navbar div {
+     display: inline-block; 
+    vertical-align: middle;
+}*/
+
+.utility {
+    height: 40px;
+    margin-left: 380px;
+    margin-right: 100px;
+}
+
+.utility span,
+button {
+    vertical-align: middle;
+}
+
+.utility span {
+    display: inline-block;
+    width: 156px;
+    height: 55px;
+    margin-left: 5px;
+    line-height: 55px;
+    background-color: rgb(218, 216, 216);
+    text-align: center;
+}
+
+.utility button {
+    border: 0;
+    width: 87px;
+    height: 55px;
+    background-color: rgb(253, 194, 86);
+    /* background-color: rgb(249, 82, 5); */
+}
+
+.utility button a {
+    font-size: large;
+}
+
+.dropdown select {
+    border: 0;
+}
+
+.dropdown {
+    margin-top: 17px;
+    margin-left: 5px;
+    border: 1px solid black;
+    padding: 17px 17px 17px 7px;
+
+}
+
+.dropdown select {
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.dropdown select option:first-child {
+    visibility: hidden;
+}
+
+.searchform>form>label>button {
+    width: 50px;
+    height: 56px;
+    border: 0;
+    background-color: transparent;
+}
+
+.searchform>form>input {
+    border: 0;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 56px;
+    width: 199px;
+}
+
+.searchinput::placeholder {
+    font-size: large;
+    color: gray;
+    opacity: 0.2;
+    line-height: 30px;
+}
+
+.searchform {
+    margin-top: 17px;
+    margin-left: 5px;
+    width: 249px;
+    height: 56px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
